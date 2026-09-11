@@ -1,0 +1,26 @@
+:root {
+    --main-color: #BA944D;
+}
+
+body {
+    background: #141e30;
+    background: -webkit-linear-gradient(to right, #243b55, #141e30);
+    background: linear-gradient(to right, #243b55, #141e30);
+}
+
+li {
+    list-style: none;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #fff;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 10px;
+}

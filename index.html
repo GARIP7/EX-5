@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Students System</title>
+</head>
+
+<body>
+
+    <section id="top-header" class="text-center my-4">
+        <img src="./images/logo-be01d065.png" alt="logo">
+    </section>
+
+    <section id="input-section" class="mx-4">
+        <form action="" class="p-4 mx-auto" data-type="add">
+            <i class="fa-solid fa-rotate-left reset d-none" onclick="resetForm()"></i>
+            <h3 class="text-center">Students System</h3>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-user"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="First Name*" name="firstName"
+                    onblur="chickInput(this)" data-valid="false">
+            </div>
+            <p class="alert alert-danger d-none" data-error-name="firstName" role="alert"></p>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-user"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="Last Name*" name="lastName"
+                    onblur="chickInput(this)" data-valid="false">
+            </div>
+            <p class="alert alert-danger d-none" data-error-name="lastName" role="alert"></p>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-envelope"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="Email*" name="email" onblur="chickInput(this)"
+                    data-valid="false">
+            </div>
+            <p class="alert alert-danger d-none" data-error-name="email" role="alert"></p>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-hashtag"></i>
+                </span>
+                <input type="number" class="form-control" placeholder="Age*" name="age" onblur="chickInput(this)"
+                    data-valid="false">
+            </div>
+            <p class="alert alert-danger d-none" data-error-name="age" role="alert"></p>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-mobile-button"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="Phone*" name="phone" onblur="chickInput(this)"
+                    data-valid="false">
+            </div>
+            <p class="alert alert-danger d-none" data-error-name="phone" role="alert"></p>
+
+            <button class="btn btn-success w-100">Add</button>
+        </form>
+    </section>
+
+    <section id="search-area" mx-auto my-4">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="search" class="form-control" placeholder="Search..." id="query-input" name="search">
+        </div>
+    </section>
+
+    <section id="data-view" class="w-50 mx-auto table-responsive mb-5">
+
+<div id="no-data-msg" class="text-center p-2">
+    There are no data
+</div>
+    <table class="table">
+        <thead>
+            <tr class="table-dark">
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Phone</th>
+                <th>Option</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+    </table>
+
+</section>
+    </section>
+
+    <script src="./js/functions.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
